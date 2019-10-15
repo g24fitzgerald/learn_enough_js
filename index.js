@@ -1,3 +1,5 @@
+module.exports = Phrase;
+
 // Adds reverse method to all strings
 String.prototype.reverse = function reverse() {
   return Array.from(this).reverse().join("");
