@@ -9,22 +9,18 @@ String.prototype.reverse = function reverse() {
 function Phrase(content) {
   this.content = content;
 
-  this.processor = function(string) {
-    return string.toLowerCase();
-  }
-
   // Returns content processed for pallindrome testing
   this.processedContent = function processedContent() {
-    return this.processor(this.content);
+    return this.letters().toLowerCase();
+  }
+
+  // Returns letters in the content
+  this.letters = function letters() {
+    return (this.content.match(/[a-z]/gi) || []).join("");
   }
 
   // Returns true for a palindrome, false otherwise
   this.palindrome = function palindrome() {
     return this.processedContent() === this.processedContent().reverse();
   }
-
-  // Makes the phrase LOUDER
-  this.louder = function() {
-    return this.content.toUpperCase();
-  };
 }
