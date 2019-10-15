@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/g24fitzgerald/learn_enough_js/issues"
   },
-  "homepage": "https://github.com/g24fitzgerald/learn_enough_js#readme"
+  "homepage": "https://github.com/g24fitzgerald/learn_enough_js#readme",
+  "dependencies": {
+    "mhartl-palindrome": "^0.1.0"
+  }
 }
