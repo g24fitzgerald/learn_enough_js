@@ -22,6 +22,10 @@
   },
   "homepage": "https://github.com/g24fitzgerald/learn_enough_js#readme",
   "dependencies": {
-    "mhartl-palindrome": "^0.1.0"
+    "fs": "0.0.1-security",
+    "jsdom": "^15.2.0",
+    "mhartl-palindrome": "^0.1.0",
+    "request": "^2.88.0",
+    "requst": "0.0.1-security"
   }
 }
